@@ -46,7 +46,8 @@ function App() {
           <div className="h-32 relative w-32 bg-red-400 rounded-full">
             <img src={profileImg} alt="" id='profile_img' className="w-full h-full" draggable="false" />
           </div>
-          <div className="font-bold ">Annette Black</div>
+          <div className="font-bold ">Roderick Ebube</div>
+          <div className="hidden" id="slack">bube</div>
         </div>
         <div className="space-y-4">
           {
