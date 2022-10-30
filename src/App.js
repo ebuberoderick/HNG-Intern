@@ -5,6 +5,7 @@ import zuriImg from './images/Zuri.Internship_Logo.png'
 import profileImg from "./images/profile__img.png";
 import ingressiveImg from './images/I4G.png';
 import icon from './images/Icon.png';
+import icon2 from './images/Icon (2).png';
 import Mylink from './components/linkButton';
 import React from 'react'
 
@@ -39,14 +40,20 @@ function App() {
   return (
     <div className="p-3 divide-y">
       <div className="max-w-6xl mx-auto space-y-8 py-8 relative">
-        <div className="absolute h-12 w-12 rounded-full border cursor-pointer flex items-center justify-center right-0 md:right-36 top-16">
+        <div className="absolute h-12 w-12 rounded-full border border-dashed group cursor-pointer flex items-center justify-center right-0 md:right-36 top-16">
           {/* <i className="ri-reply-line "></i> */}
           <img src={icon} alt="icon" className="hidden md:block"/>
           <i className="ri-more-line md:hidden"></i>
+          <div className="relative">
+            <div className="absolute bg-black text-white text-sm w-20 text-center hidden transition-all duration-500 group-hover:block -top-4 right-12 before:h-3 before:w-3 before:rotate-45 before:-right-1 before:top-2 before:bg-black before:absolute py-1 rounded-md shadow-md">Share Link</div>
+          </div>
         </div>
         <div className="flex flex-col justify-center items-center gap-4">
-          <div className="h-32 relative w-32 bg-red-400 rounded-full">
+          <div className="h-32 relative w-32 overflow-hidden rounded-full group">
             <img src={profileImg} alt="profile_img" id='profile_img' className="w-full h-full" draggable="false" />
+            <div className="bg-gray-700 top-0 bg-opacity-70 hidden  group-hover:flex justify-center items-end pb-6 absolute w-full h-full">
+              <div><img src={icon2} alt="icon2"/></div>
+            </div>
           </div>
           <div className="font-bold ">Roderick Ebube</div>
           <div className="hidden" id="slack">bube</div>
