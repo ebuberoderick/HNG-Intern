@@ -3,7 +3,8 @@ import './remixicon/fonts/remixicon.css'
 import slackImg from './images/slack.png'
 import zuriImg from './images/Zuri.Internship_Logo.png'
 import profileImg from "./images/profile__img.png";
-import ingressiveImg from './images/I4G.png'
+import ingressiveImg from './images/I4G.png';
+import icon from './images/Icon.png';
 import Mylink from './components/linkButton';
 import React from 'react'
 
@@ -39,12 +40,13 @@ function App() {
     <div className="p-3 divide-y">
       <div className="max-w-6xl mx-auto space-y-8 py-8 relative">
         <div className="absolute h-12 w-12 rounded-full border cursor-pointer flex items-center justify-center right-0 md:right-36 top-16">
-          <i className="ri-reply-line hidden md:block"></i>
+          {/* <i className="ri-reply-line "></i> */}
+          <img src={icon} alt="icon" className="hidden md:block"/>
           <i className="ri-more-line md:hidden"></i>
         </div>
         <div className="flex flex-col justify-center items-center gap-4">
           <div className="h-32 relative w-32 bg-red-400 rounded-full">
-            <img src={profileImg} alt="" id='profile_img' className="w-full h-full" draggable="false" />
+            <img src={profileImg} alt="profile_img" id='profile_img' className="w-full h-full" draggable="false" />
           </div>
           <div className="font-bold ">Roderick Ebube</div>
           <div className="hidden" id="slack">bube</div>
