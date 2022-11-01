@@ -61,7 +61,7 @@ function App() {
         <div className="space-y-4">
           {
             arrayLink.map((links) => (
-              <Mylink displayName={links.displayName} linkName={links.linkName}></Mylink>
+              <Mylink displayName={links.displayName} id={links.id} linkName={links.linkName}></Mylink>
             ))
           }
         </div>
